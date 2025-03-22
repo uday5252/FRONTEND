@@ -6,7 +6,7 @@ function FetchProducts() {
 
     const [ allProducts, setAllProducts ] = useState([])
 
-    Axios.get("http://localhost:8000/fetch/products")
+    Axios.get("https://mern-backend-gxnq.onrender.com/fetch/products")
     .then(function(output){
         setAllProducts(output.data.data)
     })
