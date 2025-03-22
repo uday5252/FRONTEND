@@ -26,7 +26,7 @@ function ProductCreationForm() {
 
     function sendData(){
         // Logic to send all the form details to the backend
-        Axios.post("http://localhost:8000/collect/product", {
+        Axios.post("https://mern-backend-gxnq.onrender.com/collect/product", {
             name: name,
             price: price,
             category: category,
